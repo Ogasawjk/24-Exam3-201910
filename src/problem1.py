@@ -2,9 +2,9 @@
 Exam 3, problem 1.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2018.
+         their colleagues and JUSTIN OGASAWARA.  October 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -66,8 +66,14 @@ def run_test_problem1():
     # SUMMARY of the test results:
     print_summary_of_test_results(test_results)
 
-
 def problem1(numbers):
+    sum = 0
+    start = int(len(numbers)//3)
+    finish = int(2*len(numbers)/3)
+    print(int(2*len(numbers)/3))
+    for k in range(start,finish):
+        sum = sum + numbers[k]
+    return sum
     """
     What comes in:
       -- A non-empty sequence of numbers, with the sequence having a length
@@ -86,7 +92,7 @@ def problem1(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
